@@ -1,0 +1,116 @@
+/*
+  DIAGNOSTIC STYLING
+*/
+/* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css */
+
+#stage {
+    background: powderblue;
+    
+    /*Fixed Sizes */
+    height: 300px;
+    width: 600px;
+    
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  /*Flowers*/
+  img {
+    width: 5%;
+    
+  }
+  
+  .still {
+    position: absolute; 
+    
+  }
+  
+  #f-1 {
+    bottom: 200px;
+    left: 80px;
+    transform: rotate(20deg);
+    
+  }
+  
+  #f-2 {
+    bottom: 220px;
+    left: 200px;
+    transform: rotate(40deg);
+    
+  }
+  
+  #f-3 {
+    bottom: 80px;
+    left: 150px;
+    transform: rotate(70deg);
+    
+  }
+  
+  #f-4 {
+    bottom: 145px;
+    left: 240px;
+    transform: rotate(90deg);
+    
+  }
+  
+  #f-5 {
+    bottom: 100px;
+    left: 250px;
+    transform: rotate(65deg);
+    
+  }
+  
+  #f-6 {
+    bottom: 190px;
+    left: 350px;
+    transform: rotate(40deg);
+    
+  }
+  
+  #f-7 {
+    bottom: 160px;
+    left: 50px;
+    transform: rotate(45deg);
+    
+  }
+  
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinning {
+      animation-name: spin;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      position: relative;
+    
+   
+  }
+  
+  div.fall {
+    
+  }
+  
+  /* FIRST */
+  h1 {
+    position: absolute; 
+    margin-top: 140px;
+    margin-left: 240px;
+    font-size: 100px;
+    color:#EDF33B;
+    animation: fade 10s infinite;
+  }
+  
+  @keyframes fade {
+    0%, 100%{ opacity: 0 }
+    50% { opacity: 1 }
+  }
+  
